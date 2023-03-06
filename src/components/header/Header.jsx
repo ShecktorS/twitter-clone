@@ -1,10 +1,14 @@
 import "./index.css";
 
-const Header = () => {
+const Header = ({ setLeftSection }) => {
   return (
     <div className="Header">
       <div className="Header__top">
-        <img src="https://robohash.org/giacomino" alt="profile pic" />
+        <img
+          src="https://robohash.org/giacomino"
+          alt="profile pic"
+          onClick={() => setLeftSection((prev) => !prev)}
+        />
         <img
           src="https://img.icons8.com/color/256/twitter--v1.png"
           alt="twitter pic"

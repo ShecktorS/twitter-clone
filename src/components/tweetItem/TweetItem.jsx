@@ -1,4 +1,3 @@
-import tweets from "../../mocks/tweets.js";
 import "./index.css";
 
 const TweetItem = ({ tweet }) => {
@@ -16,7 +15,7 @@ const TweetItem = ({ tweet }) => {
           <img
             src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/256/external-comments-social-media-ui-tanah-basah-basic-outline-tanah-basah.png"
             alt="comment image"
-          ></img>
+          />
           <img
             src="https://img.icons8.com/external-bearicons-glyph-bearicons/256/external-Repost-social-media-bearicons-glyph-bearicons.png"
             alt="repost image"
