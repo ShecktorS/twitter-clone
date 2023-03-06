@@ -1,16 +1,19 @@
 .Header {
   height: 95px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-bottom: solid 1px gray;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .Header__top {
   position: relative;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .Header__top img:nth-child(1) {
@@ -26,14 +29,13 @@
 
 .Header__bottom {
   display: flex;
-  width: 100%;
-  font-size: 0.9em;
-  align-items: center;
-  justify-content: space-between;
-  height: 25px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .Header__bottom h3 {
   /* white-space: nowrap; */
   height: 100%;
+  margin-right: 30px;
 }

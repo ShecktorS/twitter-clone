@@ -1,10 +1,13 @@
 import "./index.css";
+import tweets from "../../mocks/tweets";
 import TweetItem from "../tweetItem";
 
 const TweetList = () => {
   return (
     <div className="TweetList">
-      <TweetItem />
+      {tweets.map((tweet) => (
+        <TweetItem tweet={tweet} />
+      ))}
     </div>
   );
 };

@@ -1,17 +1,17 @@
 import tweets from "../../mocks/tweets.js";
 import "./index.css";
 
-const TweetItem = () => {
+const TweetItem = ({ tweet }) => {
   return (
     <div className="TweetItem">
-      <img src={tweets[0].pic} alt="" className="pro-pic" />
+      <img src={tweet.pic} alt="image profile" className="pro-pic" />
       <div className="tweet">
         <div className="tweet__head">
-          <h3>{tweets[1].name}</h3>
-          <p> {tweets[1].tag} </p>
+          <h3>{tweet.name}</h3>
+          <p> {tweet.tag} </p>
           <p>• 24h </p>
         </div>
-        <div className="tweet__text">{tweets[1].body}</div>
+        <div className="tweet__text">{tweet.body}</div>
         <div className="tweet__icons">
           <img
             src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/256/external-comments-social-media-ui-tanah-basah-basic-outline-tanah-basah.png"
