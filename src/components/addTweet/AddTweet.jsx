@@ -1,7 +1,7 @@
 import "./index.css";
 
 const AddTweet = () => {
-  return <div className="AddTweet">Add Tweet</div>;
+  return <div className="AddTweet">+</div>;
 };
 
 export default AddTweet;
