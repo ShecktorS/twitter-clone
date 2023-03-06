@@ -1,4 +1,4 @@
-const myPost = [
+const tweets = [
   {
     id: 1,
     name: "Pippo",
@@ -55,3 +55,5 @@ const myPost = [
     reactions: 2,
   },
 ];
+
+export default tweets;
