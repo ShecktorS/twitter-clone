@@ -1,0 +1,38 @@
+.Header {
+  height: 95px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Header__top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.Header__top img:nth-child(1) {
+  position: absolute;
+  left: 5px;
+  background-color: rgb(128, 234, 155);
+  border-radius: 100%;
+}
+
+.Header__top img {
+  height: 32px;
+}
+
+.Header__bottom {
+  display: flex;
+  width: 100%;
+  font-size: 0.9em;
+  align-items: center;
+  justify-content: space-between;
+  height: 25px;
+}
+
+.Header__bottom h3 {
+  /* white-space: nowrap; */
+  height: 100%;
+}
