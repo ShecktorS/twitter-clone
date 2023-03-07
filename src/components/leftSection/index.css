@@ -29,10 +29,94 @@
 }
 
 .content {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 0;
   background-color: white;
   width: 83%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.top-section > * {
+  /* border: solid red 1px; */
+}
+
+.top-section {
+  height: 177px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-section .info-profile {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: solid red 1px;
+  padding: 5px;
+}
+
+.top-section .pro-pic img {
+  height: 45px;
+  background-color: aquamarine;
+  border-radius: 50%;
+}
+
+.top-section .name-and-user {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  border: solid rgb(0, 26, 255) 1px;
+  font-size: 1em;
+}
+
+.top-section .name-and-user > h4,
+.name-and-user > p {
+  margin: 0;
+}
+
+.name-and-user > p {
+  font-size: 0.9em;
+}
+.top-section .following {
+  display: flex;
+  height: 60px;
+  font-size: 0.9em;
+}
+
+.top-section .following p:nth-child(1) {
+  margin-right: 7px;
+}
+
+.top-section .settings {
+  width: 20%;
+  border: solid red 1px;
+}
+
+.settings {
+  border: solid red 1px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  border: 2px black solid;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: rotate(90deg);
+}
+
+.circle p {
+  transform: translate(0, -7px);
+  font-size: 1.4em;
 }

@@ -10,7 +10,9 @@ const LeftSection = ({ leftSectionIsOpen, setLeftSection }) => {
       <div className="content">
         <div className="top-section">
           <div className="info-profile">
-            <div className="pro-pic"></div>
+            <div className="pro-pic">
+              <img src="https://robohash.org/giacomino" alt="profile pic" />
+            </div>
             <div className="name-and-user">
               <h4>Paolo Filottete</h4>
               <p>@paolo-fil</p>
@@ -25,7 +27,9 @@ const LeftSection = ({ leftSectionIsOpen, setLeftSection }) => {
             </div>
           </div>
           <div className="settings">
-            <div className="circle">...</div>
+            <div className="circle">
+              <p>...</p>
+            </div>
           </div>
         </div>
         <div className="mid-section">
