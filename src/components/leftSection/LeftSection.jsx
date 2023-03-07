@@ -4,7 +4,7 @@ const LeftSection = ({ leftSectionIsOpen, setLeftSection }) => {
   return (
     <div className={`LeftSection ${leftSectionIsOpen && "show"}`}>
       <div
-        className="overlay"
+        className={`overlay ${leftSectionIsOpen && "show-overlay"}`}
         onClick={() => setLeftSection((prev) => !prev)}
       ></div>
       <div className="content">
