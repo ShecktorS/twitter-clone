@@ -3,6 +3,7 @@ import Header from "./components/header";
 import HomePage from "./components/homePage";
 import Footer from "./components/footer";
 import TweetPage from "./components/tweetPage";
+import LeftSection from "./components/leftSection";
 import { useState } from "react";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       {addTweetIsOpen && (
         <TweetPage className="TweetPage" setAddTweet={setAddTweet} />
       )}
+      <LeftSection />
     </div>
   );
 }
