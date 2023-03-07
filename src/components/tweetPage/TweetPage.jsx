@@ -4,10 +4,13 @@ import { FiImage } from "react-icons/fi";
 import { AiOutlineGif } from "react-icons/ai";
 import { GiFeather } from "react-icons/gi";
 
-const TweetPage = () => {
+const TweetPage = ({ setAddTweet }) => {
   return (
     <div className="TweetPage">
-      <div className="overlay"></div>
+      <div
+        className="overlay"
+        onClick={() => setAddTweet((prev) => !prev)}
+      ></div>
       <div className="tweet-options">
         <div className="spaces">
           <p>Spazi</p>

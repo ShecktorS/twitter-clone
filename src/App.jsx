@@ -11,10 +11,12 @@ function App() {
   return (
     <div className="App">
       <Header setLeftSection={setLeftSection} />
-      <HomePage setAddTweet={setAddTweet} />
+      <HomePage setAddTweet={setAddTweet} className="HomePage" />
       <Footer />
       {leftSectionIsOpen && <leftSection />}
-      {addTweetIsOpen && <TweetPage className="TweetPage" />}
+      {addTweetIsOpen && (
+        <TweetPage className="TweetPage" setAddTweet={setAddTweet} />
+      )}
     </div>
   );
 }
