@@ -11,19 +11,28 @@ const TweetPage = () => {
       <div className="tweet-options">
         <div className="spaces">
           <p>Spazi</p>
-          <BiMicrophone />
+          <div>
+            <BiMicrophone />
+          </div>
         </div>
         <div className="photos">
           <p>Foto</p>
-          <FiImage />
+          <div>
+            <FiImage />
+          </div>
         </div>
         <div className="gif">
           <p>GIF</p>
-          <AiOutlineGif />
+          <div>
+            <AiOutlineGif />
+          </div>
         </div>
         <div className="tweet">
           <p>Tweet</p>
-          <GiFeather />
+          <div>
+            <GiFeather className="tweet__svg" />
+            <p className="add-icon">⁺</p>
+          </div>
         </div>
       </div>
     </div>
