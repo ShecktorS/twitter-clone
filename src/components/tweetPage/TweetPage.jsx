@@ -1,4 +1,8 @@
 import "./index.css";
+import { BiMicrophone } from "react-icons/bi";
+import { FiImage } from "react-icons/fi";
+import { AiOutlineGif } from "react-icons/ai";
+import { GiFeather } from "react-icons/gi";
 
 const TweetPage = () => {
   return (
@@ -7,19 +11,19 @@ const TweetPage = () => {
       <div className="tweet-options">
         <div className="spaces">
           <p>Spazi</p>
-          <img src="" alt="" />
+          <BiMicrophone />
         </div>
         <div className="photos">
           <p>Foto</p>
-          <img src="" alt="" />
+          <FiImage />
         </div>
         <div className="gif">
           <p>GIF</p>
-          <img src="" alt="" />
+          <AiOutlineGif />
         </div>
         <div className="tweet">
           <p>Tweet</p>
-          <img src="" alt="" />
+          <GiFeather />
         </div>
       </div>
     </div>

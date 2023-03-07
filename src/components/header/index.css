@@ -32,6 +32,7 @@
   flex-wrap: nowrap;
   white-space: nowrap;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .Header__bottom h3 {

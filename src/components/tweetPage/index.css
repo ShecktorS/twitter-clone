@@ -5,11 +5,36 @@
 
 .tweet-options {
   position: absolute;
-  bottom: 70px;
+  bottom: 75px;
   right: 0;
   height: 250px;
-  width: 150px;
+  width: 180px;
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 255, 0.479);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tweet-options > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  border: solid red 1px;
+  width: 100%;
+}
+
+.tweet-options > div > p {
+  width: 50%;
+  text-align: end;
+}
+
+.tweet-options > div > svg {
+  width: 50%;
+  font-size: 1.3em;
+}
+
+.tweet-options .tweet svg {
+  font-size: 1.5em;
 }
