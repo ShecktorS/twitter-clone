@@ -41,10 +41,6 @@
   padding: 10px;
 }
 
-.top-section > * {
-  /* border: solid red 1px; */
-}
-
 .top-section {
   height: 177px;
   display: flex;
