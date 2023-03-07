@@ -1,9 +1,16 @@
 .LeftSection {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -500px;
   width: 100%;
   height: 100%;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.show {
+  left: 0;
+  z-index: 1;
 }
 
 .overlay {

@@ -18,7 +18,10 @@ function App() {
       {addTweetIsOpen && (
         <TweetPage className="TweetPage" setAddTweet={setAddTweet} />
       )}
-      <LeftSection />
+      <LeftSection
+        leftSectionIsOpen={leftSectionIsOpen}
+        setLeftSection={setLeftSection}
+      />
     </div>
   );
 }

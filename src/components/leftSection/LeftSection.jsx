@@ -1,9 +1,12 @@
 import "./index.css";
 
-const LeftSection = () => {
+const LeftSection = ({ leftSectionIsOpen, setLeftSection }) => {
   return (
-    <div className="LeftSection">
-      <div className="overlay"></div>
+    <div className={`LeftSection ${leftSectionIsOpen && "show"}`}>
+      <div
+        className="overlay"
+        onClick={() => setLeftSection((prev) => !prev)}
+      ></div>
       <div className="content">
         <div className="top-section">
           <div className="info-profile">
