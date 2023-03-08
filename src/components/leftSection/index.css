@@ -54,7 +54,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  border: solid red 1px;
   padding: 5px;
 }
 
@@ -68,7 +67,6 @@
   display: flex;
   flex-direction: column;
   height: 50px;
-  border: solid rgb(0, 26, 255) 1px;
   font-size: 1em;
 }
 
@@ -92,11 +90,9 @@
 
 .top-section .settings {
   width: 20%;
-  border: solid red 1px;
 }
 
 .settings {
-  border: solid red 1px;
   height: 60px;
   display: flex;
   justify-content: center;

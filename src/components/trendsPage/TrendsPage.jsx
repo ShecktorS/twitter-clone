@@ -1,7 +1,15 @@
 import "./index.css";
 import { FiSettings } from "react-icons/fi";
+import TrendItem from "../trendItem";
+import { useState, useEffect } from "react";
 
 const TrendsPage = () => {
+  const [trend, getTrends] = useState([]);
+  useEffect(() => {
+    fetch("https://dummyjson.com/posts")
+      .then((res) => res.json())
+      .then(({ posts }) => getTrends(posts));
+  }, []);
   return (
     <div className="TrendsPage">
       <div className="TrendsPage__header">
@@ -15,7 +23,9 @@ const TrendsPage = () => {
       </div>
       <div className="TrendsPage__content">
         <h4>Tendenze per te</h4>
-        <div className="trends-list">{/* <TrendsItem /> */}</div>
+        {trend.map((item) => (
+          <TrendItem item={item} />
+        ))}
       </div>
     </div>
   );

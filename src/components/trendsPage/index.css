@@ -45,18 +45,21 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  border: solid red 1px;
   height: calc(100vh - 121px);
   padding: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .TrendsPage__content > h4 {
   font-size: 1.2em;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .trends-list {
   border: solid blue 1px;
   margin-top: 30px;
   height: 80%;
+  overflow: auto;
 }
