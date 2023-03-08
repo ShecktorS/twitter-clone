@@ -21,6 +21,7 @@
   left: 5px;
   background-color: rgb(128, 234, 155);
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .Header__top img {

@@ -1,0 +1,62 @@
+.TrendsPage {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  height: calc(100vh - 61px);
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+.TrendsPage__header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px gray;
+  padding: 10px;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.TrendsPage__header > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+
+.TrendsPage__header > input {
+  height: 35px;
+  border-radius: 40px;
+  flex-grow: 0.5;
+  border: none;
+  background-color: #eff3f4;
+  outline: none;
+  padding-left: 13px;
+}
+
+.TrendsPage .FiSettings {
+  font-size: 1.2em;
+}
+
+.TrendsPage__content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: solid red 1px;
+  height: calc(100vh - 121px);
+  padding: 20px;
+}
+
+.TrendsPage__content > h4 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.trends-list {
+  border: solid blue 1px;
+  margin-top: 30px;
+  height: 80%;
+}
