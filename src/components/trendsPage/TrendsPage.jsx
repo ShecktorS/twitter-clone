@@ -18,13 +18,14 @@ const TrendsPage = () => {
           type="text"
           className="search-on-twitter"
           placeholder="Cerca su Twitter"
+          value=""
         />
         <FiSettings className="FiSettings" />
       </div>
       <div className="TrendsPage__content">
         <h4>Tendenze per te</h4>
-        {trend.map((item) => (
-          <TrendItem item={item} />
+        {trend.map((item, i) => (
+          <TrendItem item={item} key={i} />
         ))}
       </div>
     </div>

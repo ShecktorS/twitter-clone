@@ -6,7 +6,7 @@ const TweetList = () => {
   return (
     <div className="TweetList">
       {tweets.map((tweet) => (
-        <TweetItem tweet={tweet} />
+        <TweetItem tweet={tweet} key={tweet.id} />
       ))}
     </div>
   );
