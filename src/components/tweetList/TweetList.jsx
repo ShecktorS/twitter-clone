@@ -4,7 +4,7 @@ import TweetItem from "../tweetItem";
 
 const TweetList = () => {
   return (
-    <div className="TweetList">
+    <div className="TweetList" onScroll={() => console.log("pippo")}>
       {tweets.map((tweet) => (
         <TweetItem tweet={tweet} key={tweet.id} />
       ))}

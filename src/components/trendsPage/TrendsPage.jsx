@@ -18,7 +18,6 @@ const TrendsPage = () => {
           type="text"
           className="search-on-twitter"
           placeholder="Cerca su Twitter"
-          value=""
         />
         <FiSettings className="FiSettings" />
       </div>
