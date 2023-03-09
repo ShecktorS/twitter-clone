@@ -33,7 +33,7 @@ const TrendsPage = () => {
       <div className="TrendsPage__content">
         <h4>Tendenze per te</h4>
         {filteredList(trend).map((item) => (
-          <TrendItem item={item} key={item.id} />
+          <TrendItem item={item} key={item} />
         ))}
       </div>
     </div>
