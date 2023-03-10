@@ -1,0 +1,63 @@
+.RetweetChoisePage {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.RetweetChoise__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.RetweetChoise__content {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 150px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  transition: all 0.4s ease-out;
+  overflow: hidden;
+  transform: translate(0, 0);
+}
+
+.slowlyShow {
+  transform: translate(0, 200px);
+}
+
+.swipeBar {
+  position: absolute;
+  bottom: 138px;
+  left: calc(50% - 22.5px);
+  height: 6px;
+  width: 45px;
+  background-color: rgb(202, 202, 202);
+  border-radius: 20px;
+}
+
+.retweetChoise,
+.citeChoise {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.retweetIcon {
+  font-size: 1.3em;
+}
+
+.citeChoise p {
+  transform: translate(+3px);
+}

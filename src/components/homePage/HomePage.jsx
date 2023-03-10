@@ -2,10 +2,10 @@ import "./index.css";
 import TweetList from "../tweetList";
 import AddTweet from "../addTweet/AddTweet";
 
-const HomePage = ({ setAddTweet }) => {
+const HomePage = ({ setAddTweet, setRetweetChoisePage }) => {
   return (
     <div className="HomePage">
-      <TweetList />
+      <TweetList setRetweetChoisePage={setRetweetChoisePage} />
       <AddTweet setAddTweet={setAddTweet} />
     </div>
   );

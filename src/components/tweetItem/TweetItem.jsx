@@ -1,6 +1,8 @@
 import "./index.css";
 
-const TweetItem = ({ tweet }) => {
+const TweetItem = ({ tweet, setRetweetChoisePage }) => {
+  const retweetPost = () => setRetweetChoisePage(true);
+
   return (
     <div className="TweetItem">
       <img src={tweet.pic} alt="image profile" className="pro-pic" />
@@ -19,6 +21,7 @@ const TweetItem = ({ tweet }) => {
           <img
             src="https://img.icons8.com/external-bearicons-glyph-bearicons/256/external-Repost-social-media-bearicons-glyph-bearicons.png"
             alt="repost image"
+            onClick={retweetPost}
           />
           <img
             src="https://img.icons8.com/material-outlined/256/filled-like.png"
