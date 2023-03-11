@@ -15,7 +15,6 @@ const RetweetChoisePage = ({
           !retweetChoisePageIsOpen && "slowlyShow"
         }`}
       >
-        {" "}
         {/* TODO: Sostituisci al montaggio del componente una classe che imposti visbility e z-index a 5 su APP */}
         <div className="swipeBar"></div>
         <div className="retweetChoise">

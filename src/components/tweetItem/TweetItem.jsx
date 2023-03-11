@@ -1,7 +1,9 @@
 import "./index.css";
-
+import { useState } from "react";
+//  TODO: cambiare valore del cuore
 const TweetItem = ({ tweet, setRetweetChoisePage }) => {
   const retweetPost = () => setRetweetChoisePage(true);
+  const [isliked, setLike] = useState(false);
 
   return (
     <div className="TweetItem">
@@ -24,8 +26,13 @@ const TweetItem = ({ tweet, setRetweetChoisePage }) => {
             onClick={retweetPost}
           />
           <img
-            src="https://img.icons8.com/material-outlined/256/filled-like.png"
+            src={
+              isliked
+                ? "https://img.icons8.com/color/256/hearts.png"
+                : "https://img.icons8.com/material-outlined/256/filled-like.png"
+            }
             alt="like image"
+            onClick={() => setLike((prev) => !prev)}
           />
           <img
             src="https://img.icons8.com/ios-glyphs/256/bar-chart.png"
