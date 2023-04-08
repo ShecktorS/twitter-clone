@@ -114,3 +114,46 @@
   transform: translate(0, -7px);
   font-size: 1.4em;
 }
+
+.mid-section {
+}
+
+.mid-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mid-section__icons {
+  font-size: 1.3em;
+  margin: 0 20px;
+  transform: translateY(5px);
+}
+
+.twitter-blue-text {
+  display: inline;
+}
+
+.twitter-blue {
+  width: 30px;
+  height: 30px;
+  display: inline;
+  margin: 0 18px;
+}
+
+.twitter-blue img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  transform: translateY(7px);
+}
+
+.mid-section ul li:nth-last-child(1) {
+  position: relative;
+}
+.mid-section ul li:nth-last-child(1)::after {
+  content: "❤";
+  position: absolute;
+  top: -5px;
+  left: 40px;
+  font-size: 0.8em;
+}

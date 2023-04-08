@@ -1,6 +1,5 @@
 import "./index.css";
 import { useState } from "react";
-//  TODO: cambiare valore del cuore
 const TweetItem = ({ tweet, setRetweetChoisePage }) => {
   const retweetPost = () => setRetweetChoisePage(true);
   const [isliked, setLike] = useState(false);

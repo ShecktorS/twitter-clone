@@ -1,4 +1,9 @@
 import "./index.css";
+import twitter from "../../assets/img/twitter.png";
+import { CgProfile } from "react-icons/cg";
+import { BiMessageRoundedDetail } from "react-icons/bi";
+import { BsBookmark } from "react-icons/bs";
+import { RiFileList2Line } from "react-icons/ri";
 
 const LeftSection = ({ leftSectionIsOpen, setLeftSection }) => {
   return (
@@ -35,27 +40,46 @@ const LeftSection = ({ leftSectionIsOpen, setLeftSection }) => {
         <div className="mid-section">
           <ul>
             <li>
-              <h3>Profilo</h3>{" "}
+              <h3>
+                <CgProfile className="mid-section__icons" />
+                Profilo
+              </h3>
               {/* Inserire all'interno dell'H3 o della li l'icona! */}
             </li>
             <li>
-              <h3>Twitter Blue</h3>{" "}
+              <div className="twitter-blue ">
+                <img src={twitter} alt="twitter_blue" />
+              </div>
+              <h3 className="twitter-blue-text">Twitter Blue</h3>{" "}
               {/* Inserire all'interno dell'H3 o della li l'icona! */}
             </li>
             <li>
-              <h3>Argomenti</h3>{" "}
+              <h3>
+                {" "}
+                <BiMessageRoundedDetail className="mid-section__icons" />{" "}
+                Argomenti
+              </h3>{" "}
               {/* Inserire all'interno dell'H3 o della li l'icona! */}
             </li>
             <li>
-              <h3>Segnalibri</h3>{" "}
+              <h3>
+                {" "}
+                <BsBookmark className="mid-section__icons" /> Segnalibri
+              </h3>{" "}
               {/* Inserire all'interno dell'H3 o della li l'icona! */}
             </li>
             <li>
-              <h3>Liste</h3>{" "}
+              <h3>
+                {" "}
+                <RiFileList2Line className="mid-section__icons" /> Liste
+              </h3>{" "}
               {/* Inserire all'interno dell'H3 o della li l'icona! (Eventualmente all'interno dell'H3 fare uno span) */}
             </li>
             <li>
-              <h3>Twitter Circle</h3>{" "}
+              <h3>
+                <CgProfile className="mid-section__icons mid-section__icons--circle" />
+                Twitter Circle
+              </h3>{" "}
               {/* Inserire all'interno dell'H3 o della li l'icona! */}
             </li>
           </ul>
